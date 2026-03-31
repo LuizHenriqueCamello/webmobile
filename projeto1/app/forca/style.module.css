@@ -1,0 +1,202 @@
+.container {
+  text-align: center;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+}
+
+/* FORCA */
+.forca {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  margin: 20px auto;
+}
+
+.base {
+  width: 100px;
+  height: 10px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+}
+
+.poste {
+  width: 10px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  left: 80px;
+  bottom: 10px;
+}
+
+.topo {
+  width: 80px;
+  height: 10px;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+
+.corda {
+  width: 2px;
+  height: 30px;
+  background: black;
+  position: absolute;
+  top: 10px;
+  left: 160px;
+}
+
+/* BONECO */
+.cabeca {
+  width: 30px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  left: 145px;
+}
+
+.corpo {
+  width: 3px;
+  height: 50px;
+  background: black;
+  position: absolute;
+  top: 70px;
+  left: 160px;
+}
+
+/* Braços */
+.bracoEsq {
+  width: 3px;
+  height: 35px;
+  background: black;
+  position: absolute;
+  top: 75px;
+  left: 160px;
+  transform: rotate(-45deg);
+  transform-origin: top center;
+}
+
+.bracoDir {
+  width: 3px;
+  height: 35px;
+  background: black;
+  position: absolute;
+  top: 75px;
+  left: 160px;
+  transform: rotate(45deg);
+  transform-origin: top center;
+}
+
+/* Pernas */
+.pernaEsq {
+  width: 3px;
+  height: 35px;
+  background: black;
+  position: absolute;
+  top: 120px;
+  left: 160px;
+  transform: rotate(-30deg);
+  transform-origin: top center;
+}
+
+.pernaDir {
+  width: 3px;
+  height: 35px;
+  background: black;
+  position: absolute;
+  top: 120px;
+  left: 160px;
+  transform: rotate(30deg);
+  transform-origin: top center;
+}
+
+/* Olhos e boca */
+.olhoEsq {
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+.olhoDir {
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 165px;
+}
+
+.boca {
+  width: 15px;
+  height: 3px;
+  background: black;
+  position: absolute;
+  top: 60px;
+  left: 150px;
+  border-radius: 2px;
+}
+
+/* Cartola */
+.chapeu {
+  position: absolute;
+  top: 30px;
+  left: 140px;
+  width: 40px; 
+  height: 15px; 
+}
+
+.chapeu::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  width: 50px;
+  height: 5px;
+  background: black;
+  border-radius: 2px;
+}
+
+.chapeu::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 40px;
+  height: 15px;
+  background: black;
+  border-radius: 5px 5px 0 0;
+}
+
+/* OUTROS */
+.palavra {
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.teclado button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.win {
+  color: green;
+}
+
+.lose {
+  color: red;
+}
