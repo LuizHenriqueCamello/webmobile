@@ -1,10 +1,78 @@
 .container {
   text-align: center;
-  margin-top: 30px;
-  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-/* FORCA */
+.moedas {
+  font-size: 18px;
+}
+
+/* palavra maior */
+.palavra {
+  font-size: 2.8rem;
+  margin: 20px 0;
+  letter-spacing: 8px;
+}
+
+/* ================= BOTÕES ================= */
+.botoes button,
+.botoes a,
+.proximo {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.botoes button:hover,
+.botoes a:hover,
+.proximo:hover {
+  transform: scale(1.05);
+}
+
+/* remover sublinhado do link */
+.botoes a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* botão próxima palavra */
+.proximo {
+  margin-top: 15px;
+  background: #22c55e;
+}
+
+/* ================= DIFICULDADE ================= */
+.dificuldades {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.dificuldades button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.facil { background: green; }
+.medio { background: orange; }
+.dificil { background: red; }
+
+.ativo {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px white;
+}
+
+/* ================= FORCA ================= */
 .forca {
   position: relative;
   width: 200px;
@@ -12,191 +80,169 @@
   margin: 20px auto;
 }
 
-.base {
-  width: 100px;
-  height: 10px;
-  background: black;
-  position: absolute;
-  bottom: 0;
-  left: 50px;
-}
-
+/* estrutura */
 .poste {
-  width: 10px;
+  width: 5px;
   height: 200px;
-  background: black;
+  background: white;
   position: absolute;
-  left: 80px;
-  bottom: 10px;
+  left: 40px;
 }
 
 .topo {
-  width: 80px;
-  height: 10px;
-  background: black;
+  width: 100px;
+  height: 5px;
+  background: white;
   position: absolute;
   top: 0;
-  left: 80px;
+  left: 40px;
 }
 
 .corda {
   width: 2px;
   height: 30px;
-  background: black;
+  background: white;
   position: absolute;
-  top: 10px;
-  left: 160px;
+  top: 5px;
+  left: 140px;
 }
 
-/* BONECO */
+/* cabeça */
 .cabeca {
-  width: 30px;
-  height: 30px;
-  border: 3px solid black;
+  width: 40px;
+  height: 40px;
+  border: 3px solid white;
   border-radius: 50%;
   position: absolute;
-  top: 40px;
-  left: 145px;
+  top: 35px;
+  left: 120px;
 }
 
+/* corpo */
 .corpo {
-  width: 3px;
-  height: 50px;
-  background: black;
-  position: absolute;
-  top: 70px;
-  left: 160px;
-}
-
-/* Braços */
-.bracoEsq {
-  width: 3px;
-  height: 35px;
-  background: black;
+  width: 4px;
+  height: 60px;
+  background: white;
   position: absolute;
   top: 75px;
-  left: 160px;
-  transform: rotate(-45deg);
-  transform-origin: top center;
+  left: 138px;
 }
 
-.bracoDir {
-  width: 3px;
-  height: 35px;
-  background: black;
+/* braços */
+.braco1 {
+  width: 35px;
+  height: 4px;
+  background: white;
   position: absolute;
-  top: 75px;
-  left: 160px;
-  transform: rotate(45deg);
-  transform-origin: top center;
-}
-
-/* Pernas */
-.pernaEsq {
-  width: 3px;
-  height: 35px;
-  background: black;
-  position: absolute;
-  top: 120px;
-  left: 160px;
+  top: 85px;
+  left: 105px;
   transform: rotate(-30deg);
-  transform-origin: top center;
 }
 
-.pernaDir {
-  width: 3px;
-  height: 35px;
-  background: black;
+.braco2 {
+  width: 35px;
+  height: 4px;
+  background: white;
   position: absolute;
-  top: 120px;
-  left: 160px;
+  top: 85px;
+  left: 138px;
   transform: rotate(30deg);
-  transform-origin: top center;
 }
 
-/* Olhos e boca */
-.olhoEsq {
+/* ================= PERNAS (CORRIGIDAS EM V) ================= */
+.perna1 {
+  width: 4px;
+  height: 50px;
+  background: white;
+  position: absolute;
+  top: 135px;
+  left: 138px;
+  transform: rotate(-35deg);
+  transform-origin: top;
+}
+
+.perna2 {
+  width: 4px;
+  height: 50px;
+  background: white;
+  position: absolute;
+  top: 135px;
+  left: 138px;
+  transform: rotate(35deg);
+  transform-origin: top;
+}
+
+/* ================= ROSTO ================= */
+.olho1, .olho2 {
   width: 5px;
   height: 5px;
-  background: black;
-  border-radius: 50%;
+  background: white;
   position: absolute;
   top: 50px;
-  left: 150px;
 }
 
-.olhoDir {
-  width: 5px;
-  height: 5px;
-  background: black;
-  border-radius: 50%;
-  position: absolute;
-  top: 50px;
-  left: 165px;
-}
+.olho1 { left: 130px; }
+.olho2 { left: 145px; }
 
+/* boca corrigida */
 .boca {
   width: 15px;
-  height: 3px;
-  background: black;
+  height: 8px;
+  border-bottom: 3px solid white;
+  border-radius: 50%;
   position: absolute;
-  top: 60px;
-  left: 150px;
-  border-radius: 2px;
+  top: 58px; /* leve ajuste pra ficar visível */
+  left: 132px;
 }
 
-/* Cartola */
+/* ================= CARTOLA ================= */
 .chapeu {
   position: absolute;
-  top: 30px;
-  left: 140px;
-  width: 40px; 
-  height: 15px; 
-}
-
-.chapeu::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -5px;
-  width: 50px;
-  height: 5px;
-  background: black;
-  border-radius: 2px;
+  top: 8px;
+  left: 120px;
+  width: 40px;
+  height: 22px;
+  background: white;
 }
 
 .chapeu::after {
   content: "";
   position: absolute;
-  bottom: 5px;
-  left: 0;
-  width: 40px;
-  height: 15px;
-  background: black;
-  border-radius: 5px 5px 0 0;
+  bottom: -5px;
+  left: -5px;
+  width: 50px;
+  height: 5px;
+  background: white;
 }
 
-/* OUTROS */
-.palavra {
-  font-size: 2rem;
-  letter-spacing: 5px;
+/* ================= TECLADO (CORRIGIDO) ================= */
+.teclado {
+  margin-top: 20px;
 }
 
 .teclado button {
-  margin: 5px;
-  padding: 10px;
+  margin: 6px;
+  padding: 14px;
+  width: 50px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
   cursor: pointer;
+  transition: 0.2s;
 }
 
-.reset {
-  margin-top: 20px;
-  padding: 10px 20px;
+/* cores restauradas */
+.neutra {
+  background: white;
+  color: black;
 }
 
-.win {
-  color: green;
+.correta {
+  background: #22c55e;
+  color: white;
 }
 
-.lose {
-  color: red;
+.errada {
+  background: #ef4444;
+  color: white;
 }
