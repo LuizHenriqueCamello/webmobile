@@ -5,36 +5,81 @@ import Link from "next/link";
 import styles from "./style.module.css";
 
 const palavras = [
-  { palavra: "formiga", dicas: ["Inseto", "Pequena", "Gosta de açúcar"] },
+  { palavra: "formiga", dicas: ["Inseto", "Pequena", "Açúcar"] },
   { palavra: "gato", dicas: ["Animal", "Mia", "Independente"] },
   { palavra: "cachorro", dicas: ["Animal", "Late", "Fiel"] },
-  { palavra: "computador", dicas: ["Tecnologia", "Usado para estudar", "Tem teclado"] },
-  { palavra: "banana", dicas: ["Fruta", "Amarela", "Macacos gostam"] },
+  { palavra: "computador", dicas: ["Tecnologia", "Tela", "Teclado"] },
+  { palavra: "banana", dicas: ["Fruta", "Amarela", "Doce"] },
   { palavra: "janela", dicas: ["Casa", "Vidro", "Luz"] },
   { palavra: "cadeira", dicas: ["Mobília", "Sentar", "Quatro pernas"] },
   { palavra: "livro", dicas: ["Leitura", "Páginas", "Conhecimento"] },
   { palavra: "internet", dicas: ["Rede", "Global", "Informação"] },
   { palavra: "bicicleta", dicas: ["Transporte", "Pedal", "Duas rodas"] },
+
   { palavra: "aviao", dicas: ["Transporte", "Voa", "Rápido"] },
-  { palavra: "carro", dicas: ["Transporte", "Motor", "Quatro rodas"] },
-  { palavra: "lua", dicas: ["Espaço", "Noite", "Satélite"] },
-  { palavra: "estrela", dicas: ["Espaço", "Brilha", "Distante"] },
-  { palavra: "sol", dicas: ["Calor", "Dia", "Estrela"] },
+  { palavra: "carro", dicas: ["Transporte", "Motor", "Rodas"] },
+  { palavra: "lua", dicas: ["Noite", "Satélite", "Brilha"] },
+  { palavra: "estrela", dicas: ["Céu", "Brilho", "Distante"] },
+  { palavra: "sol", dicas: ["Dia", "Calor", "Luz"] },
   { palavra: "chuva", dicas: ["Água", "Molha", "Céu"] },
   { palavra: "vento", dicas: ["Ar", "Movimento", "Invisível"] },
   { palavra: "fogo", dicas: ["Calor", "Queima", "Perigo"] },
-  { palavra: "agua", dicas: ["Líquido", "Essencial", "Transparente"] },
+  { palavra: "agua", dicas: ["Líquido", "Beber", "Vida"] },
   { palavra: "terra", dicas: ["Planeta", "Solo", "Natureza"] },
+
   { palavra: "flor", dicas: ["Planta", "Colorida", "Cheiro"] },
   { palavra: "planta", dicas: ["Verde", "Cresce", "Natureza"] },
   { palavra: "tigre", dicas: ["Animal", "Selvagem", "Listrado"] },
   { palavra: "zebra", dicas: ["Animal", "Listras", "Preto e branco"] },
   { palavra: "leao", dicas: ["Animal", "Juba", "Rei"] },
   { palavra: "abelha", dicas: ["Inseto", "Mel", "Picada"] },
-  { palavra: "escola", dicas: ["Estudo", "Alunos", "Professores"] },
-  { palavra: "professor", dicas: ["Ensina", "Sala", "Conhecimento"] },
-  { palavra: "aluno", dicas: ["Aprende", "Escola", "Estuda"] },
-  { palavra: "caneta", dicas: ["Escrever", "Tinta", "Pequena"] }
+  { palavra: "escola", dicas: ["Estudo", "Alunos", "Sala"] },
+  { palavra: "professor", dicas: ["Ensina", "Quadro", "Aula"] },
+  { palavra: "aluno", dicas: ["Aprende", "Estuda", "Escola"] },
+  { palavra: "caneta", dicas: ["Escrever", "Tinta", "Pequena"] },
+
+  { palavra: "lapis", dicas: ["Escrever", "Grafite", "Apagar"] },
+  { palavra: "borracha", dicas: ["Apagar", "Branca", "Escola"] },
+  { palavra: "caderno", dicas: ["Anotar", "Folhas", "Espiral"] },
+  { palavra: "telefone", dicas: ["Ligar", "Comunicar", "Celular"] },
+  { palavra: "teclado", dicas: ["Digitar", "Letras", "PC"] },
+  { palavra: "mouse", dicas: ["Clique", "Cursor", "Computador"] },
+  { palavra: "monitor", dicas: ["Tela", "Imagem", "PC"] },
+  { palavra: "mesa", dicas: ["Superfície", "Objetos", "Casa"] },
+  { palavra: "porta", dicas: ["Abrir", "Entrada", "Fechar"] },
+  { palavra: "chave", dicas: ["Abrir", "Metal", "Fechadura"] },
+
+  { palavra: "tempo", dicas: ["Horas", "Relógio", "Passa"] },
+  { palavra: "noite", dicas: ["Escuro", "Dormir", "Lua"] },
+  { palavra: "dia", dicas: ["Claro", "Sol", "Rotina"] },
+  { palavra: "praia", dicas: ["Areia", "Mar", "Sol"] },
+  { palavra: "mar", dicas: ["Água", "Sal", "Ondas"] },
+  { palavra: "rio", dicas: ["Água", "Corrente", "Natureza"] },
+  { palavra: "montanha", dicas: ["Alta", "Escalar", "Natureza"] },
+  { palavra: "cidade", dicas: ["Prédios", "Movimento", "Pessoas"] },
+  { palavra: "rua", dicas: ["Carros", "Caminho", "Cidade"] },
+  { palavra: "amigo", dicas: ["Confiança", "Companhia", "Pessoa"] },
+
+  { palavra: "familia", dicas: ["Casa", "União", "Parentes"] },
+  { palavra: "amor", dicas: ["Sentimento", "Coração", "Afeto"] },
+  { palavra: "feliz", dicas: ["Alegria", "Sorriso", "Bem"] },
+  { palavra: "triste", dicas: ["Chorar", "Emoção", "Desânimo"] },
+  { palavra: "jogo", dicas: ["Diversão", "Regras", "Competição"] },
+  { palavra: "bola", dicas: ["Rolar", "Redonda", "Esporte"] },
+  { palavra: "futebol", dicas: ["Gol", "Chute", "Campo"] },
+  { palavra: "basquete", dicas: ["Cesta", "Quadra", "Bola"] },
+  { palavra: "musica", dicas: ["Som", "Ouvir", "Arte"] },
+  { palavra: "filme", dicas: ["Cinema", "História", "Tela"] },
+
+  { palavra: "serie", dicas: ["Episódios", "TV", "Assistir"] },
+  { palavra: "padaria", dicas: ["Pão", "Comida", "Manhã"] },
+  { palavra: "mercado", dicas: ["Compras", "Alimentos", "Loja"] },
+  { palavra: "hospital", dicas: ["Saúde", "Médico", "Cuidado"] },
+  { palavra: "farmacia", dicas: ["Remédio", "Saúde", "Loja"] },
+  { palavra: "esporte", dicas: ["Atividade", "Corpo", "Competição"] },
+  { palavra: "energia", dicas: ["Força", "Movimento", "Eletricidade"] },
+  { palavra: "luz", dicas: ["Ilumina", "Energia", "Claridade"] },
+  { palavra: "som", dicas: ["Barulho", "Ouvido", "Vibração"] }
 ];
 
 function normalizar(texto) {
@@ -52,8 +97,11 @@ export default function Forca() {
   const [dificuldade, setDificuldade] = useState("facil");
   const [desistiu, setDesistiu] = useState(false);
   const [nivelDica, setNivelDica] = useState(0);
+  const [premiado, setPremiado] = useState(false);
 
   const dificuldades = { facil: 10, medio: 7, dificil: 5 };
+  const recompensa = { facil: 1, medio: 2, dificil: 3 };
+
   const maxErros = dificuldades[dificuldade];
 
   useEffect(() => {
@@ -67,6 +115,7 @@ export default function Forca() {
     setErros(0);
     setDesistiu(false);
     setNivelDica(0);
+    setPremiado(false);
   }
 
   if (!obj) return null;
@@ -80,13 +129,11 @@ export default function Forca() {
 
     if (!normalizar(palavra).includes(letra)) {
       setErros((prev) => prev + 1);
-    } else {
-      setMoedas((prev) => prev + 1);
     }
   }
 
   function usarDica() {
-    if (moedas <= 0) return;
+    if (moedas <= 0 || venceu || perdeu || desistiu) return;
 
     setMoedas((prev) => prev - 1);
 
@@ -107,12 +154,19 @@ export default function Forca() {
     }
   }
 
-  function desistir() {
-    if (confirm("Deseja desistir?")) setDesistiu(true);
+  function reiniciar() {
+    if (confirm("Deseja reiniciar o jogo?")) {
+      novaPalavra();
+    }
   }
 
   const venceu = palavra.split("").every((l) => letras.includes(normalizar(l)));
   const perdeu = erros >= maxErros;
+
+  if (venceu && !premiado) {
+    setMoedas((prev) => prev + recompensa[dificuldade]);
+    setPremiado(true);
+  }
 
   const palavraOculta = palavra
     .split("")
@@ -185,22 +239,20 @@ export default function Forca() {
         ))}
       </div>
 
-      {/* ✅ MENSAGENS */}
       {venceu && <h2 style={{ color: "#22c55e" }}>🎉 Você venceu!</h2>}
       {perdeu && <h2 style={{ color: "#ef4444" }}>💀 Você perdeu! Palavra: {palavra.toUpperCase()}</h2>}
-      {desistiu && <h2 style={{ color: "#facc15" }}>😢 Você desistiu! Palavra: {palavra.toUpperCase()}</h2>}
 
-      <div className={styles.botoes}>
-        <button onClick={usarDica}>💡 Dica</button>
-        <button onClick={desistir}>🏳 Desistir</button>
-        <Link href="/">⬅ Voltar ao Portfólio</Link>
-      </div>
-
-      {(venceu || perdeu || desistiu) && (
+      {(venceu || perdeu) && (
         <button className={styles.proximo} onClick={novaPalavra}>
           ▶ Próxima Palavra
         </button>
       )}
+
+      <div className={styles.botoes}>
+        <button onClick={usarDica}>💡 Dica</button>
+        <button onClick={reiniciar}>🔄 Reiniciar</button>
+        <Link href="/">⬅ Voltar ao Portfólio</Link>
+      </div>
     </div>
   );
 }
