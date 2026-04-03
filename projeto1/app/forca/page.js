@@ -211,6 +211,11 @@ export default function Forca() {
 
       <p className={styles.palavra}>{palavraOculta}</p>
 
+      {/* 🔥 CONTADOR DE ERROS */}
+      <p style={{ marginTop: "10px", fontWeight: "bold" }}>
+        ❌ Erros: {erros} / {maxErros}
+      </p>
+
       {nivelDica > 0 && (
         <div>
           {obj.dicas.slice(0, nivelDica).map((d, i) => (
