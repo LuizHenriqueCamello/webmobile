@@ -45,7 +45,7 @@ const palavras = [
   { palavra: "teclado", dicas: ["Digitar", "Letras", "PC"] },
   { palavra: "mouse", dicas: ["Clique", "Cursor", "Computador"] },
   { palavra: "monitor", dicas: ["Tela", "Imagem", "PC"] },
-  { palavra: "mesa", dicas: ["Superfície", "Objetos", "Casa"] },
+  { palavra: "mesa", dicas: ["Móvel", "Madeira", "Refeição"] },
   { palavra: "porta", dicas: ["Abrir", "Entrada", "Fechar"] },
   { palavra: "chave", dicas: ["Abrir", "Metal", "Fechadura"] },
 
